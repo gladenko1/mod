@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage-popUP</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230724154659">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page">
+			<!--				<img src="img/modal/payments/wc.svg" style="position:absolute;width: 100%;height: 100%;z-index: -1" alt="Image">-->
+			<button class="button" data-popup="#popup" type="submit" style="color: #fff">click thish TEXT - and see - MAGIC POPup</button>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+		<div id="popup" aria-hidden="true" class="popup">
+			<button data-close type="button" class="popup__close">
+				<img src="img/modal/cancel.svg" width="19" height="19" alt="Image">
+			</button>
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__text">
+						<div class="balance-modal">
+							<div class="balance-modal__navigation navigation-modal">
+								<div class="navigation-modal__title">
+									<img src="img/modal/wallet.svg" alt="Image">
+									<span>Filling up the balance</span>
+								</div>
+								<div class="navigation-modal__sel">
+									<label>SELECT YOUR COUNTRY:</label>
+									<select name="modal-country" data-class-modif="country">
+										<option value="1" selected data-asset="img/modal/flags/moldavia.svg">Moldova</option>
+										<option value="2" data-asset="img/modal/flags/australia.svg">australia</option>
+										<option value="3" data-asset="img/modal/flags/bahamas.svg">bahamas</option>
+										<option value="4" data-asset="img/modal/flags/barbados.svg">barbados</option>
+									</select>
+								</div>
+								<div class="balance-modal__block block-modal">
+									<div class="block-modal__title">
+										PAYMENT METHODS:
+									</div>
+									<div class="block-modal__methods modal-methods">
+										<div class="options">
+											<div class="options__item">
+												<input id="o_1" class="options__input" checked type="radio" value="1" name="payments">
+												<label for="o_1" class="options__label _submenu-open--active" data-parent="1">
+													<img class="options__text" src="img/modal/payments/visa.svg" alt="">
+												</label>
+											</div>
+											<div class="options__item">
+												<input id="o_2" class="options__input" type="radio" value="2" name="payments">
+												<label for="o_2" class="options__label" data-parent="2">
+													<img class="options__text" src="img/modal/payments/wc.svg" alt="">
+												</label>
+											</div>
+											<div class="options__item">
+												<input id="o_3" class="options__input" type="radio" value="3" name="payments">
+												<label for="o_3" class="options__label" data-parent="3">
+													<img class="options__text" src="img/modal/payments/payu.svg" alt="">
+												</label>
+											</div>
+											<div class="options__item">
+												<input id="o_4" class="options__input" type="radio" value="3" name="payments">
+												<label for="o_4" class="options__label">
+													<img class="options__text" src="img/modal/payments/i2i.svg" alt="">
+												</label>
+											</div>
+											<div class="options__item">
+												<input id="o_5" class="options__input" type="radio" value="3" name="payments">
+												<label for="o_5" class="options__label">
+													<img class="options__text" src="img/modal/payments/paysera.svg" alt="">
+												</label>
+											</div>
+											<div class="options__item">
+												<input id="o_6" class="options__input" type="radio" value="3" name="payments">
+												<label for="o_6" class="options__label">
+													<img class="options__text" src="img/modal/payments/neosurf.svg" alt="">
+												</label>
+											</div>
+											<div class="options__item">
+												<input id="o_7" class="options__input" type="radio" value="3" name="payments">
+												<label for="o_7" class="options__label">
+													<img class="options__text" src="img/modal/payments/przelewy.svg" alt="">
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="block-modal__info">
+										<i class="_icon-info"></i>
+										<span>All payment methods available in the selected country are listed</span>
+									</div>
+								</div>
+								<div class="navigation-modal__action promocode">
+									<div class="promocode__img"><img src="img/modal/percent.png" alt="Image"></div>
+									<div class="promocode__box">
+										<div class="promocode__title">
+											DO YOU ALREADY HAVE A CODE?
+										</div>
+										<div class="promocode__title">
+											<p>Promo code <span>“DROPLAND23”</span></p>
+											<p>successfully ACTIVATED!</p>
+										</div>
+										<div class="promocode__title">
+											<p>Promo code <span>“DROPLAND23”</span></p>
+											<p>was entered incorrectly!</p>
+										</div>
+										<small class="small-js">if you have a promo code, please enter it here:</small>
+										<form action="#" class="promocode__form">
+											<input class="promocode__input input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Enter promo code" value="">
+											<button class="promocode__btn" type="submit"><span class="btn-content">Apply</span><span class="_icon-ar-right"></span>
+											</button>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="balance-modal__content content-modal">
+								<div class="content-modal__wrapper _submenu-open" data-submenu="1">
+									<div class="refill">
+										<div class="refill__block block-refill">
+											<div class="refill__title">Refill amount:</div>
+											<div class="block-refill__content">
+												<div class="block-refill__action">
+													<div class="block-refill__box">
+														<label>$</label>
+														<input class="block-refill__input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" value="3.00">
+													</div>
+													<div class="block-refill__text">
+														Minimum amount: <span>$3.00</span>
+													</div>
+												</div>
+												<div class="block-refill__num">
+													<small>You will get</small>
+													<strong>5.00</strong>
+												</div>
+											</div>
+										</div>
+										<div class="refill__navigation">
+											<button class="refill-item" type="button"><span>$</span>3.00</button>
+											<button class="refill-item _active" type="button"><span>$</span>5.00</button>
+											<button class="refill-item" type="button"><span>$</span>10.00</button>
+											<button class="refill-item" type="button"><span>$</span>20.00</button>
+											<button class="refill-item" type="button"><span>$</span>50.00</button>
+											<button class="refill-item" type="button"><span>$</span>100.00</button>
+											<button class="refill-item" type="button"><span>$</span>200.00</button>
+										</div>
+										<div class="refill__amount amount-refill">
+											<img src="img/modal/book.svg" alt="Image" width="29" height="29" class="amount-refill__img">
+											<div class="amount-refill__box">
+												<div class="refill__title">Refill amount:</div>
+												<p>Sharing KYC data (first name, last name and/or phone number) greatly
+													increases
+													payment reliability and security.</p>
+											</div>
+											<a href="" class="amount-refill__btn"><span>+</span><span> Add payment information</span></a>
+										</div>
+										<div class="refill__agree">
+											<div class="checkbox">
+												<input id="c_" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c_" class="checkbox__label">
+													<span class="checkbox__text">I accept the terms of the <a href="">User Agreement</a></span>
+												</label>
+											</div>
+										</div>
+										<div class="refill__deposit">
+											<a href="">
+												<img src="img/modal/wallet_white.svg" width="20" height="20" alt="Image">
+												<span>deposit</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="content-modal__wrapper" hidden data-submenu="2">
+									<div class="tabs" data-tabs>
+										<nav data-tabs-titles class="tabs__navigation">
+											<button type="button" class="tabs__title _tab-active">
+												<img src="img/modal/logo-1.svg" alt="Image">
+												<img src="img/modal/logo-1_active.svg" alt="Image">
+											</button>
+											<button type="button" class="tabs__title">
+												<img src="img/modal/logo-2.svg" alt="Image">
+
+											</button>
+										</nav>
+										<div data-tabs-body class="tabs__content">
+											<div class="tabs__body">
+												<div class="tabs-content">
+													<div class="tabs-content__title">
+														Choose the wallet code
+													</div>
+													<div class="tabs-content__text">We will redirect you to the page of the
+														selected store.
+													</div>
+													<div class="tabs-content__block block-content">
+														<div class="block-content__items">
+															<div class="code-wallet">
+																<article class="code-wallet__item">
+																	<a class="stretched-link" href=""></a>
+																	<img src="img/modal/banners/01.png" alt="Image" class="code-wallet__img">
+																	<div class="code-wallet__num">
+																		<strong>2</strong>
+																		<small>$</small>
+																	</div>
+																	<div class="code-wallet__text">
+																		<img class="code-wallet__logo" src="img/modal/banners/logo-banner.svg" alt="Image">
+																		<strong>Wallet Card</strong>
+																	</div>
+																</article>
+																<article class="code-wallet__item">
+																	<a class="stretched-link" href=""></a>
+																	<img src="img/modal/banners/02.png" alt="Image" class="code-wallet__img">
+																	<div class="code-wallet__num">
+																		<strong>5</strong>
+																		<small>$</small>
+																	</div>
+																	<div class="code-wallet__text">
+																		<img class="code-wallet__logo" src="img/modal/banners/logo-banner.svg" alt="Image">
+																		<strong>Wallet Card</strong>
+																	</div>
+																</article>
+																<article class="code-wallet__item">
+																	<a class="stretched-link" href=""></a>
+																	<img src="img/modal/banners/03.png" alt="Image" class="code-wallet__img">
+																	<div class="code-wallet__num">
+																		<strong>10</strong>
+																		<small>$</small>
+																	</div>
+																	<div class="code-wallet__text">
+																		<img class="code-wallet__logo" src="img/modal/banners/logo-banner.svg" alt="Image">
+																		<strong>Wallet Card</strong>
+																	</div>
+																</article>
+																<article class="code-wallet__item">
+																	<a class="stretched-link" href=""></a>
+																	<img src="img/modal/banners/04.png" alt="Image" class="code-wallet__img">
+																	<div class="code-wallet__num">
+																		<strong>20</strong>
+																		<small>$</small>
+																	</div>
+																	<div class="code-wallet__text">
+																		<img class="code-wallet__logo" src="img/modal/banners/logo-banner.svg" alt="Image">
+																		<strong>Wallet Card</strong>
+																	</div>
+																</article>
+																<article class="code-wallet__item">
+																	<a class="stretched-link" href=""></a>
+																	<img src="img/modal/banners/05.png" alt="Image" class="code-wallet__img">
+																	<div class="code-wallet__num">
+																		<strong>50</strong>
+																		<small>$</small>
+																	</div>
+																	<div class="code-wallet__text">
+																		<img class="code-wallet__logo" src="img/modal/banners/logo-banner.svg" alt="Image">
+																		<strong>Wallet Card</strong>
+																	</div>
+																</article>
+																<article class="code-wallet__item">
+																	<a class="stretched-link" href=""></a>
+																	<img src="img/modal/banners/06.png" alt="Image" class="code-wallet__img">
+																	<img class="code-wallet__logo" src="img/modal/banners/logo-banner.svg" alt="Image">
+																	<div class="code-wallet__text">
+																		<div class="code-wallet__num">
+																			<strong>100</strong>
+																			<small>$</small>
+																		</div>
+																		<strong>Wallet Card</strong>
+																	</div>
+																</article>
+															</div>
+														</div>
+														<div class="block-content__form">
+															<div class="block-content__box">
+																<strong>Do you already have a code?</strong>
+																<p>If you have a code, please enter it here:</p>
+															</div>
+															<form action="#" class="promocode__form">
+																<input class="promocode__input input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Enter the Wallet code" value="">
+																<button class="promocode__btn" type="submit"><span class="btn-content">Apply</span><span class="_icon-ar-right"></span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tabs__body">
+												<div class="tabs-content">
+													<div class="tabs-content__title">
+														Choose the wallet code
+													</div>
+													<div class="tabs-content__text">We will redirect you to the page of the
+														selected store.
+													</div>
+													<div class="tabs-content__block block-content">
+														<div class="block-content__items">
+															<div class="code-wallet">
+																<article class="code-wallet__item">
+																	<a class="stretched-link" href=""></a>
+																	<img src="img/modal/banners/01.png" alt="Image" class="code-wallet__img">
+																	<div class="code-wallet__num">
+																		<strong>2</strong>
+																		<small>$</small>
+																	</div>
+																	<div class="code-wallet__text">
+																		<img class="code-wallet__logo" src="img/modal/banners/logo-banner.svg" alt="Image">
+																		<strong>Wallet Card</strong>
+																	</div>
+																</article>
+																<article class="code-wallet__item">
+																	<a class="stretched-link" href=""></a>
+																	<img src="img/modal/banners/02.png" alt="Image" class="code-wallet__img">
+																	<div class="code-wallet__num">
+																		<strong>5</strong>
+																		<small>$</small>
+																	</div>
+																	<div class="code-wallet__text">
+																		<img class="code-wallet__logo" src="img/modal/banners/logo-banner.svg" alt="Image">
+																		<strong>Wallet Card</strong>
+																	</div>
+																</article>
+																<article class="code-wallet__item">
+																	<a class="stretched-link" href=""></a>
+																	<img src="img/modal/banners/03.png" alt="Image" class="code-wallet__img">
+																	<div class="code-wallet__num">
+																		<strong>10</strong>
+																		<small>$</small>
+																	</div>
+																	<div class="code-wallet__text">
+																		<img class="code-wallet__logo" src="img/modal/banners/logo-banner.svg" alt="Image">
+																		<strong>Wallet Card</strong>
+																	</div>
+																</article>
+																<article class="code-wallet__item">
+																	<a class="stretched-link" href=""></a>
+																	<img src="img/modal/banners/04.png" alt="Image" class="code-wallet__img">
+																	<div class="code-wallet__num">
+																		<strong>20</strong>
+																		<small>$</small>
+																	</div>
+																	<div class="code-wallet__text">
+																		<img class="code-wallet__logo" src="img/modal/banners/logo-banner.svg" alt="Image">
+																		<strong>Wallet Card</strong>
+																	</div>
+																</article>
+																<article class="code-wallet__item">
+																	<a class="stretched-link" href=""></a>
+																	<img src="img/modal/banners/05.png" alt="Image" class="code-wallet__img">
+																	<div class="code-wallet__num">
+																		<strong>50</strong>
+																		<small>$</small>
+																	</div>
+																	<div class="code-wallet__text">
+																		<img class="code-wallet__logo" src="img/modal/banners/logo-banner.svg" alt="Image">
+																		<strong>Wallet Card</strong>
+																	</div>
+																</article>
+																<article class="code-wallet__item">
+																	<a class="stretched-link" href=""></a>
+																	<img src="img/modal/banners/06.png" alt="Image" class="code-wallet__img">
+																	<img class="code-wallet__logo" src="img/modal/banners/logo-banner.svg" alt="Image">
+																	<div class="code-wallet__text">
+																		<div class="code-wallet__num">
+																			<strong>50</strong>
+																			<small>$</small>
+																		</div>
+																		<strong>Wallet Card</strong>
+																	</div>
+																</article>
+															</div>
+														</div>
+														<div class="block-content__form">
+															<div class="block-content__box">
+																<strong>Do you already have a code?</strong>
+																<p>If you have a code, please enter it here:</p>
+															</div>
+															<form action="#" class="promocode__form">
+																<input class="promocode__input input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Enter the Wallet code" value="">
+																<button class="promocode__btn" type="submit"><span class="btn-content">Apply</span><span class="_icon-ar-right"></span>
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="content-modal__wrapper" hidden data-submenu="3">
+									<div class="refill">
+										<div class="refill__block block-refill">
+											<div class="refill__title">Refill amount:</div>
+											<div class="block-refill__content">
+												<div class="block-refill__action">
+													<div class="block-refill__box">
+														<label>$</label>
+														<input class="block-refill__input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" value="3.00">
+													</div>
+													<div class="block-refill__text">
+														Minimum amount: <span>$3.00</span>
+													</div>
+												</div>
+												<div class="block-refill__num">
+													<small>You will get</small>
+													<strong>5.00</strong>
+												</div>
+											</div>
+										</div>
+										<div class="refill__navigation">
+											<button class="refill-item" type="button"><span>$</span>3.00</button>
+											<button class="refill-item _active" type="button"><span>$</span>5.00</button>
+											<button class="refill-item" type="button"><span>$</span>10.00</button>
+											<button class="refill-item" type="button"><span>$</span>20.00</button>
+											<button class="refill-item" type="button"><span>$</span>50.00</button>
+											<button class="refill-item" type="button"><span>$</span>100.00</button>
+											<button class="refill-item" type="button"><span>$</span>200.00</button>
+										</div>
+										<div class="refill__amount amount-refill">
+											<img src="img/modal/book.svg" alt="Image" width="29" height="29" class="amount-refill__img">
+											<div class="amount-refill__box">
+												<div class="refill__title">Refill amount:</div>
+												<p>Sharing KYC data (first name, last name and/or phone number) greatly
+													increases
+													payment reliability and security.</p>
+											</div>
+											<a href="" class="amount-refill__btn"><span>+</span><span> Add payment information</span></a>
+										</div>
+										<div class="refill__agree">
+											<div class="checkbox">
+												<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c_1" class="checkbox__label">
+													<span class="checkbox__text">I accept the terms of the <a href="">User Agreement</a></span>
+												</label>
+											</div>
+										</div>
+										<div class="refill__deposit">
+											<a href="">
+												<img src="img/modal/wallet_white.svg" width="20" height="20" alt="Image">
+												<span>deposit</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script src="js/app.min.js?_v=20230724154659"></script>
+</body>
+
+</html>
